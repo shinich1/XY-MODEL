@@ -80,9 +80,9 @@ class XYSystem():
                 print('energy=%.2f'%energy)
                 self.show()
             if ((abs(energy-energy_temp)/abs(energy)<1e-4) & (k>500)) or k == max_nsweeps-1:
-                print('\nequilibrium state is reached at T=%.1f'%self.temperature)
-                print('#sweep=%i'%k)
-                print('energy=%.2f'%energy)
+                # print('\nequilibrium state is reached at T=%.1f'%self.temperature)
+                # print('#sweep=%i'%k)
+                # print('energy=%.2f'%energy)
                 break
             energy_temp = energy
         nstates = len(dic_thermal_t['energy'])
